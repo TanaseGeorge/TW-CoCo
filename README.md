@@ -1,4 +1,3 @@
-# TW-CoCo
 <!DOCTYPE  html>
 
 <html  lang="en">
@@ -94,6 +93,15 @@
 <span property="schema:name">Sebastian Stanciu</span>
 
 </span>
+
+<ul>
+    
+<li property="schema:roleContactPoint" typeof="schema:ContactPoint">
+
+<a href="mailto:sebastianstanciu@gmail.com" property="schema:email">sebastianstanciu@gmail.com</a>
+
+</li>
+</ul>
 
 </section>
 
