@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="compareStyle.css">
+</head>
+<body>
+<header>
+    <h1>Compararea Datelor</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Acasa</a></li>
+            <li><a href="dataView.html">Vizualizare date</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="chart">
+    <div class="label">Compararea datelor</div>
+    <svg width="800" height="400"></svg>
+    <div class="legend">
+        <span>Set de date 1</span>
+        <span>Set de date 2</span>
+    </div>
+    <div class="filter">
+        <label for="region">Regiune:</label>
+        <select id="region">
+            <option value="all">Toate</option>
+            <option value="north">Nord</option>
+            <option value="south">Sud</option>
+        </select>
+        <label for="interval">Interval de timp:</label>
+        <select id="interval">
+            <option value="all">Toate</option>
+            <option value="last_year">Ultimele 12 luni</option>
+            <option value="last_quarter">Ultimele 3 luni</option>
+            <option value="last_month">Ultima lună</option>
+        </select>
+    </div>
+</div>
+<script src="compare.js"></script>

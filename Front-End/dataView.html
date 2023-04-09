@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vizualizarea Datelor</title>
+    <!-- CSS personalizat -->
+    <link rel="stylesheet" href="dataStyle.css">
+</head>
+<body>
+<header>
+    <h1>Vizualizare Date</h1>
+<nav>
+    <ul>
+        <li><a href="index.html">Acasa</a></li>
+        <li><a href="dataCompare.html">Comparatie date</a></li>
+    </ul>
+</nav>
+</header>
+
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-lg-6">
+            <h2>Indicatori suplimentari</h2>
+            <select class="form-control mb-3" id="indicator">
+                <option value="">Alegeți un indicator</option>
+                <option value="gdp">Produsul Intern Brut (PIB)</option>
+                <option value="unemployment">Rata șomajului</option>
+                <option value="inflation">Inflatia</option>
+            </select>
+        </div>
+        <div class="col-lg-6">
+            <h2>Comparare cu alte state</h2>
+            <select class="form-control mb-3" id="country">
+                <option value="">Alegeti un stat</option>
+                <option value="us">Statele Unite ale Americii</option>
+                <option value="france">Franta</option>
+                <option value="germany">Germania</option>
+            </select>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <h2>Diagrama interactiva</h2>
+            <div id="chart"></div>
+        </div>
+    </div>
+    <div class="col-lg-4">
+        <h2>Statistici</h2>
+        <ul class="list-group">
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                Total respondenti
+                <span class="badge badge-primary badge-pill">5000</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                Media Consumer Confidence
+                <span class="badge badge-primary badge-pill">60</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                Maxim Consumer Confidence
+                <span class="badge badge-primary badge-pill">80</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                Minim Consumer Confidence
+                <span class="badge badge-primary badge-pill">40</span>
+            </li>
+        </ul>
+    </div>
+</div>
+</div>
+
+<!-- Biblioteca D3.js -->
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<!-- Codul personalizat JavaScript -->
+<script src="data.js"></script>
+</body>
+</html>
